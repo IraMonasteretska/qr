@@ -1,0 +1,543 @@
+//  start header section-----------------------------------------------------------
+
+// begin
+
+.beginjourney {
+    padding: 80px 0 40px;
+
+    h1 {
+        margin-bottom: 32px;
+    }
+
+    p {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 140%;
+        max-width: 459px;
+    }
+}
+
+.beginjourney__boxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+
+    .beginjourney__small {
+        width: 100%;
+        max-width: 37%;
+        flex: 0 0 37%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .beginjourney__big {
+        width: 100%;
+        max-width: 63%;
+        flex: 0 0 63%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.beginjourney__box {
+    .imgwrap {
+        border-radius: 36px;
+        position: relative;
+        overflow: hidden;
+        height: 390px;
+        width: 100%;
+        margin-bottom: 16px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+    a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 25px;
+        border-radius: 36px;
+        border: 1px solid #000;
+        color: #000;
+        font-weight: 600;
+        font-size: 18px;
+
+        img {
+            margin-left: 8px;
+        }
+    }
+}
+
+.beginjourney__box a {
+    transition: 0.3s;
+
+    img {
+        transition: 0.3s;
+    }
+
+    &:hover {
+        background: #000;
+        color: #fff;
+
+        img {
+            filter: invert(1);
+        }
+    }
+}
+
+// reconnect
+
+.reconnect {
+    padding: 100px 0 40px;
+
+    h2 {
+        margin-bottom: 60px;
+    }
+}
+
+.reconnect__box {
+    display: block;
+    width: 100%;
+    height: 218px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 36px;
+
+    .bgimg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    .bgel {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: rotate(0);
+        transition: 0.3s;
+        max-width: 327px;
+    }
+
+    .title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 140%;
+        color: #000;
+        position: absolute;
+        top: 27px;
+        left: 35px;
+
+        img {
+            margin-top: -5px;
+            margin-left: 4px;
+            transition: 0.3s;
+        }
+    }
+}
+
+.reconnect__box {
+    transition: 0.3s;
+
+    &:hover {
+        box-shadow: 0 0 10px #d9d9d9;
+
+        .title img {
+            transform: translateX(6px);
+        }
+
+        .bgel {
+            transform: scale(1.05);
+        }
+    }
+}
+
+// brainQR
+.brainqr {
+    padding: 100px 0 40px;
+
+    h3 {
+        margin-bottom: 107px;
+    }
+}
+
+.brainqr__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.brainqr__box {
+    border-radius: 36px;
+    min-height: 260px;
+    padding: 75px 24px 24px 24px;
+    width: 100%;
+    max-width: 374px;
+    flex: 0 0 374px;
+    background: linear-gradient(180deg, rgb(156, 151, 238), rgb(67, 63, 130));
+    position: relative;
+
+    p {
+        margin: 0;
+        font-weight: 300;
+        color: #fff;
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .title {
+        margin-bottom: 12px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .brainqr__icon {
+        width: 140px;
+        position: absolute;
+        left: 24px;
+        top: -52px;
+    }
+}
+
+// about us
+.aboutus {
+    padding: 100px 0 40px;
+
+    h3 {
+        margin-bottom: 24px;
+    }
+
+    .imgwrap {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 36px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .abdescr {
+        padding-left: 130px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
+        p {
+            font-size: 20px;
+            font-weight: 300;
+            color: #000;
+            line-height: 140%;
+            margin-bottom: 20px;
+        }
+    }
+
+    .abdescrbott {
+        a {
+            display: inline-block;
+        }
+    }
+}
+
+// technology
+.technology {
+    padding: 100px 0 40px;
+
+    h3 {
+        margin-bottom: 60px;
+    }
+}
+
+.technology__box {
+    .imgwrap {
+        position: relative;
+        overflow: hidden;
+        border-radius: 36px;
+        height: 350px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+    p {
+        text-align: center;
+        margin-top: 8px;
+        font-size: 24px;
+        color: #000;
+        font-weight: 600;
+        line-height: 140%;
+    }
+}
+
+.technology__box {
+    .imgwrap {
+        transition: 0.3s;
+
+        img {
+            transition: 0.5s;
+            animation-timing-function: ease-in-out;
+        }
+    }
+
+    &:hover {
+        .imgwrap {
+            box-shadow: 0 0 10px #d9d9d9;
+
+            img {
+                transform: scale(1.05);
+            }
+        }
+
+    }
+}
+
+// brain procedures
+.brainqr-procedures {
+    padding: 100px 0 40px;
+
+    h3 {
+        margin-bottom: 120px;
+    }
+
+    .orange-btn {
+        display: inline-block;
+    }
+
+    .col-lg-6 {
+
+        &:nth-last-child(2),
+        &:nth-last-child(1) {
+            .brainqrpr__box {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.brainqrpr__box {
+    background: linear-gradient(180deg, rgb(156, 151, 238), rgb(67, 63, 130));
+    border-radius: 36px;
+    min-height: 350px;
+    padding: 90px 40px 40px 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 80px;
+
+    .brainqrpr__box__icon {
+        height: 114px;
+        position: absolute;
+        left: 40px;
+        top: -52px;
+    }
+
+    p {
+        color: #fff;
+        line-height: 140%;
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+
+    .title {
+        margin-bottom: 16px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+}
+
+// faq
+.faq {
+    padding: 100px 0 40px;
+
+    .orange-btn {
+        display: inline-block;
+        padding: 14px 27px;
+    }
+
+    .imgwrap {
+        border-radius: 36px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    h3 {
+        margin-bottom: 60px;
+        padding-left: 15px;
+    }
+
+}
+
+.faqsect {
+    margin-bottom: 36px;
+
+    .faqsect__box {
+        margin-bottom: 10px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 36px;
+        position: relative;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%) rotate(0);
+            transition: 0.3s;
+            background: url('../img/main/faqarrow.svg') no-repeat center / 100%;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &.active {
+            &::after {
+                transform: translateY(-50%) rotate(-180deg);
+            }
+        }
+
+        &:nth-child(1) {
+            .faqsect__body {
+                display: block;
+            }
+        }
+    }
+
+    .faqsect__header {
+        cursor: pointer;
+
+        p {
+            margin: 0;
+            color: #000;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 140%;
+        }
+    }
+
+    .faqsect__body {
+        padding-top: 8px;
+        padding-right: 89px;
+        display: none;
+
+        p {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 140%;
+            color: #000;
+        }
+    }
+
+
+}
+
+// consultation
+.consultation {
+    padding: 100px 0 40px;
+    text-align: center;
+
+    .title {
+        font-size: 38px;
+        color: #000;
+        line-height: 140%;
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 140%;
+        margin-bottom: 32px;
+    }
+
+}
+
+// resources
+.resources {
+    padding: 100px 0 140px;
+
+    h3 {
+        margin-bottom: 60px;
+    }
+}
+
+.resourcesbox {
+    .imgwrap {
+        border-radius: 36px;
+        overflow: hidden;
+        height: 257px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+    p {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+        color: #000;
+        margin-top: 8px;
+        position: relative;
+    }
+
+    &.resourcesbox__video {
+        p {
+            padding-left: 38px;
+
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 28px;
+                height: 28px;
+                background: url('../img/main/play.png') no-repeat center / 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+}
+
+.resourcesbox {
+
+    .imgwrap {
+        img {
+            transition: 0.5s;
+            animation-timing-function: ease-in-out;
+        }
+    }
+
+    &:hover {
+        .imgwrap {
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
+}

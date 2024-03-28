@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitemap</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <style>
+    .sitemap {
+      padding: 20px 50px;
+      background: linear-gradient(180deg, rgb(185, 182, 243) 0%, rgb(121, 113, 238) 100%);
+      border-radius: 30px;
+      height: calc(100vh - 20px);
+      text-align: center;    }
+    .sitemap-logo{
+      margin: 40px auto 40px;
+      display: block;
+      width: 100%;
+      max-width: 150px;
+    }
+
+
+    .sitemap__link {
+      font-size: 28px;
+      font-weight: 600;
+      text-align: center;
+      padding: 10px 0 0;
+      display: block;
+      color: #fff;
+      transition: .3s;
+      display: inline-block;
+    }
+
+
+    .sitemap__link:hover {
+      color: #eeba83;
+    }
+
+    @media(max-width:1440px) {
+      .sitemap__link {
+        font-size: 20px;
+      }
+    }
+
+    @media(max-width:992px) {
+      .sitemap__link {
+        font-size: 18px;
+      }
+
+    }
+
+    
+  </style>
+
+<section class="sitemap">
+  <img class="sitemap-logo" src="img/logo.svg" alt="image">
+  <a class="sitemap__link" href="index.html" target="_blank">Main</a>
+</section>
+  
+</body>
+
+</html>
