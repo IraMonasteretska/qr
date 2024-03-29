@@ -15,6 +15,22 @@ $(document).ready(function () {
         $(this).next('.faqsect__body').slideToggle();
     });
 
+    // 1 screen - hove
+    var bigElement = document.querySelector('.beginjourney__small');
+
+    bigElement.addEventListener('mouseover', function() {
+        var boxesElement = this.closest('.beginjourney__boxes');
+        if (boxesElement) {
+            boxesElement.classList.add('active');
+        }
+    });
+
+    bigElement.addEventListener('mouseout', function() {
+        var boxesElement = this.closest('.beginjourney__boxes');
+        if (boxesElement) {
+            boxesElement.classList.remove('active');
+        }
+    });
 
 
 });
