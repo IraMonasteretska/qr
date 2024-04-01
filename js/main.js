@@ -13,6 +13,11 @@ $(document).ready(function () {
         $(this).toggleClass('active');
         $(this).next('.mobile-dropdown').slideToggle();
     });
+    $('.mobile-dropdown a').click(function (e) {
+        $('.burger').removeClass('open');
+        $('.header__nav').removeClass('open');
+        $('body').removeClass('bg-active');
+    });
 
     // faq
     $('.faqsect__header').click(function(){
