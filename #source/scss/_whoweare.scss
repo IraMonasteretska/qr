@@ -1,0 +1,169 @@
+.wwaimg {
+    border-radius: 36px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+
+.beginjourney__img {
+    .orange-btn {
+        margin-top: 60px;
+    }
+}
+
+.columntext {
+    padding: 100px 0 40px;
+
+    h4 {
+        margin-bottom: 36px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 18px;
+        color: #000;
+    }
+}
+
+.columntext-wrapper {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.reverseblocks {
+    padding: 100px 0 40px;
+
+    .reverseblock {
+        margin-bottom: 80px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+
+            .imgwrap {
+                text-align: left;
+            }
+        }
+    }
+
+    .textwrap {
+        p {
+            font-size: 18px;
+            color: #000;
+            font-weight: 300;
+            line-height: 140%;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .title {
+            margin-bottom: 36px;
+            font-size: 36px;
+            font-weight: 400;
+        }
+    }
+
+    .imgwrap {
+        text-align: right;
+
+        img {
+            max-width: 574px;
+            border-radius: 36px;
+            width: 100%;
+        }
+    }
+}
+
+.consultation.consultation__pb140 {
+    padding-bottom: 140px;
+}
+
+@media(max-width:1599.8px) {
+    .reverseblocks .textwrap .title {
+        font-size: 32px;
+    }
+}
+
+@media(max-width:1400.8px) {
+    .reverseblocks .textwrap .title {
+        font-size: 28px;
+    }
+
+    .columntext,
+    .reverseblocks {
+        padding: 70px 0 30px;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+    .columntext-wrapper {
+        padding: 0;
+    }
+
+    .consultation.consultation__pb140 {
+        padding-bottom: 100px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .wwaimg {
+        margin-top: 30px;
+    }
+
+    .reverseblocks .imgwrap {
+        margin-top: 25px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .reverseblocks .textwrap .title {
+        margin-bottom: 15px;
+    }
+
+    .columntext h4 {
+        margin-bottom: 20px;
+    }
+
+    .beginjourney__img .orange-btn {
+        margin-top: 30px;
+    }
+
+
+    .columntext p,
+    .reverseblocks .textwrap p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:575.8px) {
+
+    .wwaimg,
+    .reverseblocks .imgwrap img {
+        border-radius: 20px;
+    }
+
+    .columntext, .reverseblocks {
+        padding: 40px 0 20px;
+    }
+
+    .reverseblocks .textwrap .title {
+        font-size: 24px;
+    }
+
+    .consultation.consultation__pb140 {
+        padding-bottom: 60px;
+    }
+
+}
+
+

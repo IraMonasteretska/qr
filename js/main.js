@@ -7,6 +7,13 @@ $(document).ready(function () {
         $('body').toggleClass('bg-active');
     });
 
+    // MOBILE SUBMENU ------------------- //
+    $('.submenu > a').click(function (e) {
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $(this).next('.mobile-dropdown').slideToggle();
+    });
+
     // faq
     $('.faqsect__header').click(function(){
         $('.faqsect__box').not($(this).parent()).removeClass('active');
@@ -16,21 +23,25 @@ $(document).ready(function () {
     });
 
     // 1 screen - hove
-    var bigElement = document.querySelector('.beginjourney__small');
 
-    bigElement.addEventListener('mouseover', function() {
-        var boxesElement = this.closest('.beginjourney__boxes');
-        if (boxesElement) {
-            boxesElement.classList.add('active');
-        }
-    });
+    if($('.beginjourney__small').length) {
+        var bigElement = document.querySelector('.beginjourney__small');
 
-    bigElement.addEventListener('mouseout', function() {
-        var boxesElement = this.closest('.beginjourney__boxes');
-        if (boxesElement) {
-            boxesElement.classList.remove('active');
-        }
-    });
-
+        bigElement.addEventListener('mouseover', function() {
+            var boxesElement = this.closest('.beginjourney__boxes');
+            if (boxesElement) {
+                boxesElement.classList.add('active');
+            }
+        });
+    
+        bigElement.addEventListener('mouseout', function() {
+            var boxesElement = this.closest('.beginjourney__boxes');
+            if (boxesElement) {
+                boxesElement.classList.remove('active');
+            }
+        });
+    
+    }
+ 
 
 });

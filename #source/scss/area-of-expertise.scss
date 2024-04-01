@@ -1,0 +1,47 @@
+.beginjourney.beginjourney__img p {
+    max-width: 100%;
+}
+
+.rviolboxes {
+    padding: 120px 0 80px;
+}
+
+.rviolboxes__descr {
+    p {
+        font-size: 18px;
+        color: #000;
+        line-height: 140%;
+        max-width: 340px;
+    }
+
+    .title {
+        margin-bottom: 36px;
+        font-size: 36px;
+    }
+}
+
+.brainqr__box ul {
+    margin: 0;
+    font-weight: 300;
+    color: #fff;
+    font-size: 16px;
+    line-height: 140%;
+    padding-left: 30px;
+    
+    li {
+        list-style: disc;
+    }
+}
+
+.brainqr__wrap.brainqr__wrap-right {
+    .brainqr__box {
+        width: 100%;
+        max-width: 100%;
+        padding: 90px 40px 40px 40px;
+
+        .brainqr__icon {
+            width: 160px;
+            top: -60px;
+        }
+    }
+}

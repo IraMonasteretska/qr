@@ -160,6 +160,13 @@ h3 {
     color: #000;
 }
 
+h4 {
+    font-size: 36px;
+    line-height: 140%;
+    font-weight: 400;
+    color: #000;
+}
+
 .orange-btn {
     display: inline-block;
 }
@@ -168,11 +175,19 @@ h3 {
     h1, h2, h3 {
         font-size: 50px;
     }
+
+    h4 {
+        font-size: 32px;
+    }
 }
 
 @media(max-width:1400.8px) {
     h1, h2, h3 {
         font-size: 42px;
+    }
+
+    h4 {
+        font-size: 28px;
     }
 }
 
@@ -191,6 +206,7 @@ h3 {
         font-size: 46px;
     }
 
+    
 
 }
 
@@ -203,7 +219,9 @@ h3 {
         font-size: 28px;
     }
 
-  
+    h4 {
+        font-size: 24px;
+    }
 
 
 
