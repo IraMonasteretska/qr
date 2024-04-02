@@ -3,7 +3,9 @@
 }
 
 .rviolboxes {
-    padding: 120px 0 80px;
+    margin-top: 75px;
+    padding: 120px 0 10px;
+    background: url('../img/area/bg.png') no-repeat center / cover;
 }
 
 .rviolboxes__descr {
@@ -27,7 +29,7 @@
     font-size: 16px;
     line-height: 140%;
     padding-left: 30px;
-    
+
     li {
         list-style: disc;
     }
@@ -38,10 +40,108 @@
         width: 100%;
         max-width: 100%;
         padding: 90px 40px 40px 40px;
+        margin-bottom: 80px;
 
         .brainqr__icon {
             width: 160px;
             top: -60px;
         }
+    }
+}
+
+.consultation.consultation__pt140 {
+    padding-top: 140px;
+}
+
+@media(max-width:1599.8px) {
+
+    .brainqr__wrap.brainqr__wrap-right .brainqr__box .brainqr__icon {
+        width: 140px;
+        top: -50px;
+    }
+
+    .brainqr__wrap.brainqr__wrap-right .brainqr__box {
+        padding: 75px 30px 30px 30px;
+    }
+
+}
+
+@media(max-width:1400.8px) {
+
+    .rviolboxes {
+        margin-top: 40px;
+    }
+
+    .consultation.consultation__pt140 {
+        padding-top: 100px;
+    }
+
+    .brainqr__wrap.brainqr__wrap-right .brainqr__box .brainqr__icon {
+        width: 120px;
+        top: -40px;
+    }
+
+    .brainqr__wrap.brainqr__wrap-right .brainqr__box {
+        margin-bottom: 60px;
+        padding: 75px 24px 24px 24px;
+    }
+
+    .rviolboxes {
+        padding: 90px 0 10px;
+    }
+
+
+}
+
+@media(max-width:1199.8px) {
+    .rviolboxes {
+        padding: 70px 0 10px;
+    }
+
+    .rviolboxes__descr {
+        margin-bottom: 60px;
+    }
+
+    .brainqr__wrap.brainqr__wrap-right .brainqr__box {
+        min-height: 260px;
+    }
+
+    .rviolboxes__descr .title {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .brainqr__wrap.brainqr__wrap-right .brainqr__box {
+        padding: 60px 20px 40px 20px;
+        min-height: initial;
+    }
+}
+
+@media(max-width:575.8px) {
+    .rviolboxes {
+        margin-top: 20px;
+    }
+
+    .rviolboxes {
+        padding: 50px 0 10px;
+    }
+
+    .rviolboxes__descr .title {
+        font-size: 28px;
+    }
+
+    .rviolboxes__descr p {
+        font-size: 16px;
+    }
+
+    .brainqr__wrap.brainqr__wrap-right .brainqr__box .brainqr__icon {
+        width: 100px;
+        top: -35px;
+    }
+
+    .consultation.consultation__pt140 {
+        padding-top: 40px;
     }
 }

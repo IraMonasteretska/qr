@@ -116,7 +116,7 @@
             opacity: 1;
             visibility: visible;
             transform: translateY(0px);
-            backdrop-filter: blur(30px);
+            backdrop-filter: blur(50px);
         }
     }
 }
@@ -172,6 +172,10 @@
         line-height: 140%;
         font-size: 18px;
         font-weight: 600;
+        transition: .3s;
+        &:hover{
+            color: #E9741C;
+        }
     }
 }
 
@@ -179,7 +183,7 @@
 // ---=== ADAPTIVE ===--- //
 
 
-@media (max-width:1600px) {
+@media (max-width:1599.8px) {
     .submenu-dropdown__nav {
         width: 70%;
     }
