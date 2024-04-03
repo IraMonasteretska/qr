@@ -1,6 +1,8 @@
 .footer {
     background-color: #4D4D4D;
     padding: 60px 0 40px;
+    position: relative;
+    z-index: 2;
 }
 
 .footer__logo {

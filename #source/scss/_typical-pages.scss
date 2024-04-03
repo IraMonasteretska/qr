@@ -1,0 +1,350 @@
+.pagecolumn {
+    padding: 140px 0 0px;
+    position: relative;
+
+    h4 {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .frame {
+        position: absolute;
+        z-index: -1;
+        top: 110%;
+        left: 37%;
+        width: 398px;
+        height: auto;
+        background-size: cover;
+    }
+}
+
+.pagecolumn-wrapper {
+
+    p {
+        font-size: 18px;
+        line-height: 140%;
+        color: #000;
+        font-weight: 300;
+    }
+}
+
+.pagesect {
+    padding-top: 140px;
+
+    h4 {
+        margin-bottom: 60px;
+    }
+}
+
+.pagesect__image {
+    img {
+        width: 100%;
+        background-size: cover;
+        border-radius: 36px;
+    }
+}
+
+.pagesect__text {
+    p {
+        margin-bottom: 36px;
+        font-size: 18px;
+        line-height: 140%;
+        font-weight: 300;
+        color: #000;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.pagesect__list {
+    max-width: 640px;
+    &.full-width{
+        max-width: 100%;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 26px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        img {
+            width: 100px;
+            background-size: cover;
+            margin-right: 20px;
+        }
+    }
+
+    .info {
+        h5 {
+            margin-bottom: 12px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 140%;
+            color: #000;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 140%;
+            color: #000;
+        }
+    }
+}
+
+.pagesect__steps {
+    li {
+        display: flex;
+        align-items: center;
+        padding-bottom: 36px;
+        position: relative;
+
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 50%;
+            background: rgba(77, 74, 142, 1);
+            left: 28px;
+        }
+
+        &:before {
+            top: 0;
+        }
+
+        &:after {
+            top: 50%;
+        }
+
+        &:first-child {
+            &:before {
+                display: none;
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    .number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 64px;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 140%;
+        position: relative;
+        z-index: 2;
+        background: linear-gradient(180deg, rgba(156, 151, 238, 1) 0%, rgba(77, 74, 142, 1) 100%);
+    }
+
+    .info {
+        width: calc(100% - 120px);
+
+        h5 {
+            font-size: 24px;
+            margin-bottom: 8px;
+            line-height: 140%;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 140%;
+            color: #000;
+            font-weight: 300;
+        }
+    }
+}
+
+.consultation .frame {
+    position: absolute;
+    z-index: -1;
+    bottom: -40px;
+    right: 0;
+    width: 398px;
+    background-size: cover;
+}
+
+
+//  ------- ADAPTIVE ------------- //
+@media (max-width:1399.8px) {
+    .pagesect__text p {
+        margin-bottom: 15px;
+        font-size: 16px;
+        line-height: 130%;
+    }
+
+    .pagesect__steps .number {
+        margin-right: 34px;
+        margin-left: 10px;
+    }
+
+    .pagesect__steps .info {
+        width: calc(100% - 100px);
+    }
+
+    .pagesect__steps .info {
+        width: calc(100% - 100px);
+    }
+
+    .pagesect__steps li:after,
+    .pagesect__steps li:before {
+        left: 38px;
+    }
+
+
+    .pagesect {
+        padding-top: 120px;
+    }
+
+    .pagesect__steps .info p {
+        font-size: 16px;
+        line-height: 130%;
+    }
+
+    .pagesect__steps .info h5 {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+
+    .pagesect__list .info h5 {
+        margin-bottom: 5px;
+        font-size: 22px;
+        ;
+    }
+
+    .pagesect__list .info p {
+        line-height: 130%;
+    }
+
+    .pagesect__list li img {
+        width: 85px;
+        margin-right: 15px;
+    }
+
+    .pagecolumn {
+        padding: 50px 0 0px;
+    }
+
+    .pagesect h4 {
+        margin-bottom: 45px;
+    }
+}
+
+@media (max-width:991.8px) {
+    .pagecolumn-wrapper p {
+        font-size: 16px;
+    }
+
+    .pagesect__list {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .pagesect__text {
+        margin-top: 40px;
+    }
+
+    .pagesect__steps {
+        margin-top: 40px;
+    }
+
+    .pagecolumn {
+        padding: 50px 0 0px;
+    }
+
+    .technoheroscreen__navigation.bignav a {
+        max-width: 430px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .pagesect {
+        padding-top: 80px;
+    }
+
+    .pagecolumn .frame {
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width:575.8px) {
+    .pagesect {
+        padding-top: 60px;
+    }
+
+    .pagesect__list li img {
+        width: 70px;
+    }
+
+    .pagesect__list .info h5 {
+        font-size: 20px;
+    }
+
+    .consultation .frame {
+        width: 300px;
+    }
+
+    .pagecolumn .frame {
+        width: 300px;
+    }
+
+    .pagesect__steps .number {
+        width: 36px;
+        height: 36px;
+        font-size: 15px;
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    .pagesect__steps .info {
+        width: calc(100% - 56px);
+    }
+
+    .pagesect__steps li:after,
+    .pagesect__steps li:before {
+        left: 18px;
+    }
+
+    .pagesect__steps .info h5 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width:425.8px) {
+    .pagesect__list li img {
+        width: 65px;
+    }
+
+    .pagesect__list .info p {
+        font-size: 14px;
+    }
+    .pagesect__steps .info p {
+        font-size: 14px;
+    }
+    .pagesect {
+        padding-top: 50px;
+    }
+}

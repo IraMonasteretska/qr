@@ -1,0 +1,103 @@
+.tysect {
+    min-height: calc(100vh - 97px);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 38px;
+        margin-bottom: 34px;
+    }
+
+    p {
+        max-width: 720px;
+        margin: 0 auto 34px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 140%;
+        color: #000;
+    }
+
+    .bttext {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 140%;
+        color: #000;
+        margin-bottom: 60px;
+    }
+
+    .tyic {
+        max-width: 120px;
+    }
+
+    .bgleft {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .bgright {
+        position: absolute;
+        right: 0;
+       top: 0;
+    }
+}
+
+.tysect .container {
+    position: relative;
+    z-index: 2;
+}
+
+@media(max-width:1599.8px) {
+
+    .tysect .bttext {
+        margin-bottom: 30px;
+    }
+
+    .tysect .tyic {
+        max-width: 100px;
+    }
+
+    .tysect h1 {
+        margin-bottom: 20px;
+    }
+
+    .tysect p {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .tysect h1 br {
+        display: none;
+    }
+}
+
+@media(max-width:575.8px) {
+    .tysect h1 {
+        font-size: 26px;
+    }
+
+    .tysect .bgright,
+    .tysect .bgleft {
+        display: none;
+    }
+
+    .tysect {
+        padding-top: 50px;
+    }
+
+
+}
+
+@media(max-height:570px) {
+    .tysect {
+        display: block;
+    }
+}

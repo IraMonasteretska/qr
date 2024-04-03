@@ -48,8 +48,8 @@ $(document).ready(function () {
 
     }
 
-     // scroll to anchor --- //
-     $('.submenu a, .anchor-link').on('click', function (e) {
+    // scroll to anchor --- //
+    $('.submenu a, .anchor-link').on('click', function (e) {
         var target = $(this.hash);
         if (target.length) {
             var offsetTop = target.offset().top;
@@ -59,5 +59,13 @@ $(document).ready(function () {
             }, 500);
         }
     });
+
+    // select2
+    if ($('select').length) {
+        $('.styledselect').select2({
+            placeholder: "Select a state",
+            minimumResultsForSearch: Infinity,
+        });
+    }
 
 });

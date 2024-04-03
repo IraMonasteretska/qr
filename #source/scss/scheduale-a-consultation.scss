@@ -1,0 +1,120 @@
+.shtext {
+    color: #000;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+.inputfield.w100 {
+    max-width: 100%;
+    flex: 0 0 100%;
+}
+
+.select2 {
+    width: 100% !important;
+    margin-top: 20px;
+}
+
+.select2-container .select2-selection--single {
+    height: 46px;
+    background: transparent;
+    border: 1px solid #000;
+    border-radius: 36px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 42px;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #696969;
+    font-weight: 300;
+    padding-right: 40px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    width: 30px;
+    height: 30px;
+    background: url('../img/shedule/select-arr.png') no-repeat center / 100%;
+    top: 8px;
+    right: 16px;
+
+    b {
+        display: none;
+    }
+}
+
+.select2-dropdown {
+    border: 1px solid #000 !important;
+    margin-top: 5px;
+    border-radius: 5px !important;
+}
+
+.select2-results__option {
+    &:nth-child(1) {
+        border-radius: 5px 5px 0 0;
+    }
+
+    &:last-child {
+        border-radius: 0 0 5px 5px;
+    }
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: rgb(185, 182, 243);
+}
+
+.contacts.shedulesect {
+    position: relative;
+
+    .contacts__form {
+        margin-bottom: 0;
+        padding-top: 23px;
+    }
+}
+
+.shedulesectbg {
+    position: absolute;
+    left: 0;
+    top: 100px;
+}
+
+@media(max-width:1599.8px) {
+    .contacts.shedulesect .contacts__form {
+        padding-top: 18px;
+
+        &>h2 {
+            font-size: 32px;
+        }
+
+        
+    }
+
+
+
+
+
+}
+
+@media(max-width:1400.8px) {
+    .contacts.shedulesect .contacts__form {
+        padding-top: 10px;
+
+        &>h2 {
+            font-size: 32px;
+        }
+    }
+}
+
+@media(max-width:991.8px) {
+    .shedulesectbg {
+        display: none;
+    }
+}
+
+@media(max-width:575.8px) {
+    .contacts.shedulesect .contacts__form>h2 {
+        font-size: 28px;
+    }
+}
+
+// Choose from the list 
