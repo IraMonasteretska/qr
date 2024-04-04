@@ -1,0 +1,274 @@
+.backbtn {
+    margin-bottom: 80px;
+
+    a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 36px;
+        border: 1px solid #000;
+        color: #000;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 140%;
+        min-height: 53px;
+        padding: 4px 28px;
+        transition: 0.3s;
+
+        svg {
+            margin-right: 8px;
+
+            path {
+                transition: 0.3s;
+            }
+        }
+
+        &:hover {
+            background: #E9741C;
+            border-color: #E9741C;
+            color: #fff;
+            animation: pulse 1.5s 0.1s infinite;
+
+            svg {
+                path {
+                    fill: #fff;
+                }
+            }
+        }
+    }
+
+    &.backbtn__bot {
+        margin-bottom: 0;
+        margin-top: 80px;
+    }
+}
+
+.article {
+    padding: 80px 0 0 0;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #000;
+        font-weight: 400;
+        line-height: 140%;
+        margin-top: 40px;
+    }
+
+    h1 {
+        font-size: 38px;
+        margin-bottom: 80px;
+    }
+
+    h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    h4 {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    h5 {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+
+    h6 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    img {
+        margin: 60px auto;
+        max-width: 100%;
+        border-radius: 36px;
+        display: block;
+    }
+
+    p {
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: #000;
+        font-weight: 300;
+    }
+
+    blockquote {
+        font-style: italic;
+        padding-left: 20px;
+        border-left: 2px solid #000;
+        margin: 30px 0;
+    }
+
+    ul {
+        padding-left: 30px;
+        margin: 10px 0;
+        font-size: 18px;
+        color: #000;
+        font-weight: 300;
+    
+        li {
+            list-style: disc;
+        }
+    }
+    
+    ol {
+        padding-left: 30px;
+        margin: 10px 0;
+        font-size: 18px;
+        color: #000;
+        font-weight: 300;
+    
+        li {
+            list-style: inherit;
+        }
+    }
+}
+
+.videowrapper {
+    max-width: 940px;
+    margin: 60px auto;
+    overflow: hidden;
+    border-radius: 36px;
+}
+
+
+@media(max-width:1599.8px) {
+
+    .article {
+        padding: 60px 0 0 0;
+    }
+
+    .backbtn {
+        margin-bottom: 50px;
+    }
+
+    .article h1 {
+        margin-bottom: 50px;
+        font-size: 36px;
+    }
+
+    .article h2 {
+        font-size: 32px;
+    }
+
+    .article h3 {
+        font-size: 28px;
+    }
+
+    .article h4 {
+        font-size: 24px;
+    }
+
+    .article img {
+        margin: 40px auto;
+    }
+
+    .article h1,
+    .article h2,
+    .article h3,
+    .article h4,
+    .article h5,
+    .article h6 {
+        margin-top: 30px;
+    }
+
+    .videowrapper {
+        margin: 40px auto;
+    }
+}
+
+@media(max-width:767.8px) {
+    .article h1 {
+        margin-bottom: 50px;
+        font-size: 32px;
+    }
+
+    .backbtn a {
+        font-size: 16px;
+        min-height: 48px;
+    }
+
+    .article {
+        padding-top: 40px;
+    }
+
+    .backbtn {
+        margin-bottom: 30px;
+    }
+
+    .article img {
+        margin: 20px auto;
+    }
+
+    .article p,
+    .article ol,
+    .article ul {
+        font-size: 16px;
+    }
+
+    .article h2 {
+        font-size: 28px;
+    }
+
+    .article h3 {
+        font-size: 26px;
+    }
+
+    .article h4 {
+        font-size: 22px;
+    }
+
+    .videowrapper {
+        margin: 20px auto;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .article h1 {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    .article h2 {
+        font-size: 24px;
+    }
+
+    .article h3 {
+        font-size: 22px;
+    }
+
+    .article h4 {
+        font-size: 21px;
+    }
+
+    .article h5 {
+        font-size: 18px;
+    }
+
+    .article h6 {
+        font-size: 16px;
+    }
+
+    .article img {
+        border-radius: 20px;
+    }
+
+    .backbtn.backbtn__bot {
+        margin-top: 40px;
+    }
+
+    .videowrapper {
+        border-radius: 20px;
+    }
+}
