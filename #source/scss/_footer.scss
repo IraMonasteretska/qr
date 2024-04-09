@@ -93,7 +93,8 @@
         align-items: center;
         justify-content: space-between;
 
-        input[type="text"] {
+        input[type="text"],
+        input[type="email"] {
             width: 57%;
             height: 48px;
             display: flex;
