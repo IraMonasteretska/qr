@@ -124,6 +124,7 @@
 .submenu-dropdown__inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .submenu-dropdown__info {
@@ -155,7 +156,7 @@
     gap: 40px;
 
     li {
-        max-width: 50%;
+        width: 30%;
     }
 
     img {
@@ -173,7 +174,8 @@
         font-size: 18px;
         font-weight: 600;
         transition: .3s;
-        &:hover{
+
+        &:hover {
             color: #E9741C;
         }
     }
@@ -188,6 +190,13 @@
         width: 70%;
     }
 }
+
+@media (max-width:1399.8px) {
+    .submenu-dropdown__nav li {
+        width: 45%;
+    }
+}
+
 
 @media (max-width:1199.8px) {
     .submenu-dropdown__nav {

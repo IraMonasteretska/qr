@@ -46,7 +46,7 @@
 
 .pagesect__text {
     p {
-        margin-bottom: 36px;
+        margin-bottom: 25px;
         font-size: 18px;
         line-height: 140%;
         font-weight: 300;
@@ -54,6 +54,20 @@
 
         &:last-child {
             margin-bottom: 0;
+        }
+    }
+    ul {
+        padding-left: 20px;
+        li{
+            margin-bottom: 5px;
+            list-style: disc;
+        }
+    }
+    ol {
+        padding-left: 20px;
+        li{
+            list-style: decimal;
+            margin-bottom: 5px;
         }
     }
 }
