@@ -73,13 +73,13 @@
 
         h4 {
             color: #fff;
-            padding: 14px 41px;
+            padding: 17px 41px 17px 0;
         }
 
         &:after {
             content: '';
             position: absolute;
-            height: 73px;
+            height: 100%;
             border-radius: 50px;
             display: inline-block;
             width: 200vw;
@@ -104,7 +104,6 @@
     .checklist {
         li {
             margin-bottom: 33px;
-            padding-left: 56px;
             color: #2D2D2D;
             display: flex;
 
@@ -368,43 +367,368 @@
     }
 }
 
-.resources.pelvposts{
+.resources.pelvposts {
     padding: 100px 0;
-    .title{
+
+    .title {
         margin: 0 auto 16px;
         text-align: center;
         max-width: 750px;
     }
-    .subtitle{
+
+    .subtitle {
         margin: 0 auto 50px;
         font-size: 18px;
         text-align: center;
         max-width: 750px;
         color: #2D2D2D;
     }
+
     p {
         font-size: 24px;
     }
 }
 
-.pelvabout .iconslist{
+.pelvabout .col-lg-6:first-child {
+    .iconslist {
+        margin-bottom: 0;
+    }
+}
+
+.pelvabout .iconslist {
     margin-bottom: 100px;
-    li{
+
+    li {
         display: flex;
         align-items: center;
         margin-bottom: 27px;
-        img{
+
+        img {
             width: 80px;
             height: 80px;
             background-size: cover;
             border-radius: 30px;
             margin-right: 40px;
         }
-        p{
+
+        p {
             width: calc(100% - 120px);
             font-size: 18px;
             color: #2D2D2D;
             line-height: 130%;
         }
+    }
+}
+
+// ----- ADAPTIVE ----- //
+
+@media (max-width: 1599.8px) {
+    .pelvtop {
+        padding: 150px 0;
+    }
+}
+
+@media (max-width: 1399.8px) {
+    .pelvnumbers__col .title {
+        font-size: 30px;
+    }
+
+    .pelvbox__box .icon {
+        height: 45px;
+    }
+
+    .pelvbox__box p {
+        font-size: 18px;
+    }
+
+    .pelvbox__box {
+        padding: 25px 25px 35px;
+        margin-bottom: 30px;
+    }
+
+    .pelvinfo__descr .title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .pelvinfo__descr ul li {
+        font-size: 20px;
+    }
+
+    .pelvabout .cta>img {
+        width: 300px;
+    }
+
+    .pelvtop {
+        padding: 120px 0;
+    }
+
+    .pelvtop__descr h1 {
+        font-size: 54px;
+    }
+
+    .pelvtop__descr p {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1299.8px) {
+    .pelvlist__image {
+        max-width: 320px;
+    }
+
+    .pelvlist__descr li {
+        padding-bottom: 45px;
+    }
+
+    .pelvabout .cta>img {
+        width: 230px;
+        right: -5%;
+
+    }
+
+    .pelvtop {
+        padding: 90px 0;
+    }
+}
+
+@media (max-width: 1199.8px) {
+    .pelvnumbers__image img {
+        width: 230px;
+        right: -30px;
+    }
+}
+
+@media (max-width: 991.8px) {
+    .pelvnumbers__col {
+        border: 0;
+    }
+
+    .resources.pelvposts {
+        padding: 70px 0;
+    }
+
+    .pelvnumbers__content {
+        padding: 32px 0 0;
+    }
+
+    .pelvnumbers__col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .pelvnumbers__image img {
+        display: none;
+    }
+
+    .pelvlist__image {
+        max-width: 360px;
+        display: block;
+        margin: 0 auto 30px;
+    }
+
+    .pelvinfo__box {
+        border-radius: 40px;
+        padding: 35px 35px;
+    }
+
+    .pelvinfo__box h4 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .pelvinfo__descr img {
+        display: block;
+        max-width: 400px;
+        margin: 0 auto 40px;
+    }
+
+    .pelvabout .cta>img {
+        width: 180px;
+    }
+
+    .inforow .head {
+        margin-bottom: 40px;
+    }
+
+    .inforow .head h4 {
+        font-size: 24px;
+    }
+
+    .pelvtop__descr h1 {
+        font-size: 42px;
+    }
+
+    .pelvtop__img {
+        position: relative;
+        top: initial;
+        right: initial;
+        transform: translateY(0);
+        margin: 30px 0 0 auto;
+        display: block;
+        height: auto;
+        width: 85%;
+    }
+
+    .pelvtop {
+        padding: 70px 0 30px;
+    }
+}
+
+@media (max-width: 767.8px) {
+    
+    .resources.pelvposts {
+        padding: 70px 0 40px;
+    }
+
+    .resources.pelvposts p {
+        font-size: 22px;
+    }
+
+    .pelvinfo__descr .title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .pelvinfo__descr img {
+        border-radius: 20px;
+    }
+
+    .pelvinfo__descr ul li {
+        font-size: 18px;
+        line-height: 130%;
+        margin-bottom: 12px;
+    }
+
+    .pelvinfo__descr {
+        margin-bottom: 40px;
+    }
+
+    .pelvabout {
+        padding: 50px 0 40px;
+    }
+
+    .pelvabout .title {
+        margin-bottom: 40px;
+    }
+
+    .pelvabout .videowrapper {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 575.8px) {
+    .pelvnumbers__col {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .resources.pelvposts {
+        padding: 55px 0 20px;
+    }
+
+    .pelvabout .iconslist {
+        margin-bottom: 60px;
+    }
+
+    .pelvabout .iconslist li p {
+        width: calc(100% - 85px);
+        font-size: 16px;
+    }
+
+    .pelvabout .iconslist li img {
+        width: 65px;
+        height: 65px;
+        border-radius: 10px;
+        margin-right: 20px;
+    }
+
+    .resources.pelvposts p {
+        font-size: 18px;
+    }
+
+    .inforow .checklist li:before {
+        width: 30px;
+        height: 30px;
+        margin-right: 15px;
+    }
+
+    .inforow .checklist li p {
+        font-size: 16px;
+        width: calc(100% - 45px);
+    }
+
+    .pelvlist {
+        padding: 60px 0;
+    }
+
+    .pelvlist__descr li:after {
+        left: 20px;
+    }
+
+    .pelvlist__descr li p {
+        width: calc(100% - 60px);
+    }
+
+    .pelvlist__descr li span {
+        margin-right: 30px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .pelvbox {
+        margin-bottom: 60px;
+    }
+
+    .pelvbox__box .icon {
+        height: 40px;
+        margin-bottom: 15px;
+    }
+
+    .pelvbox__box {
+        height: auto;
+        margin-bottom: 25px;
+    }
+
+    .pelvbox__box p {
+        font-size: 16px;
+    }
+
+    .pelvinfo {
+        padding: 0 0 60px;
+    }
+
+    .pelvinfo__box h4 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .pelvinfo__box {
+        padding: 25px 25px;
+    }
+
+    .pelvinfo__head {
+        margin: 0px auto 40px;
+    }
+
+    .inforow .head {
+        margin-bottom: 30px;
+    }
+
+    .inforow .col-lg-6 p {
+        font-size: 16px;
+    }
+
+    .pelvtop__descr h1 {
+        font-size: 36px;
+        margin-bottom: 22px;
+    }
+
+    .pelvtop__descr p {
+        font-size: 18px;
+    }
+
+    .pelvtop {
+        padding: 50px 0 30px;
     }
 }
